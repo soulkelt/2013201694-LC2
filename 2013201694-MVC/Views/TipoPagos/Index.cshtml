@@ -1,0 +1,40 @@
+﻿@model IEnumerable<_2013201694_ENT.TipoPago>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Venta.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MetodoPago)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Venta.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MetodoPago)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TipoPagoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TipoPagoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TipoPagoId })
+        </td>
+    </tr>
+}
+
+</table>

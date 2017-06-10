@@ -1,0 +1,35 @@
+﻿@model _2013201694_ENT.LugarViaje
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LugarViaje</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Servicio.NombreServicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Servicio.NombreServicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreLugar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreLugar)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LugarViajeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

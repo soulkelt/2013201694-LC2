@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90563452-BFE5-479B-96AB-28166AD2AB64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2014118110_ENT</RootNamespace>
+    <AssemblyName>2014118110-ENT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AdministrativoDTO.cs" />
+    <Compile Include="DTO\BusDTO.cs" />
+    <Compile Include="DTO\ClienteDTO.cs" />
+    <Compile Include="DTO\EmpleadoDTO.cs" />
+    <Compile Include="DTO\EncomiendaDTO.cs" />
+    <Compile Include="DTO\LugarViajeDTO.cs" />
+    <Compile Include="DTO\ServicioDTO.cs" />
+    <Compile Include="DTO\TipoComprobanteDTO.cs" />
+    <Compile Include="DTO\TipoLugarDTO.cs" />
+    <Compile Include="DTO\TipoPagoDTO.cs" />
+    <Compile Include="DTO\TipoTripulacionDTO.cs" />
+    <Compile Include="DTO\TipoViajeDTO.cs" />
+    <Compile Include="DTO\TransporteDTO.cs" />
+    <Compile Include="DTO\TripulacionDTO.cs" />
+    <Compile Include="DTO\VentaDTO.cs" />
+    <Compile Include="Entities\Administrativo.cs" />
+    <Compile Include="Entities\Bus.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Empleado.cs" />
+    <Compile Include="Entities\Encomienda.cs" />
+    <Compile Include="Entities\LugarViaje.cs" />
+    <Compile Include="IRepositories\IBusRepository.cs" />
+    <Compile Include="IRepositories\IClienteRepository.cs" />
+    <Compile Include="IRepositories\IEmpleadoRepository.cs" />
+    <Compile Include="IRepositories\IEncomiendaRepository.cs" />
+    <Compile Include="IRepositories\ILugarViajeRepository.cs" />
+    <Compile Include="IRepositories\IServicioRepository.cs" />
+    <Compile Include="IRepositories\ITipoComprobanteRepository.cs" />
+    <Compile Include="IRepositories\ITipoLugarRepository.cs" />
+    <Compile Include="IRepositories\ITipoPagoRepository.cs" />
+    <Compile Include="IRepositories\ITipoTripulacionRepository.cs" />
+    <Compile Include="IRepositories\ITipoViajeRepository.cs" />
+    <Compile Include="IRepositories\ITripulacionRepository.cs" />
+    <Compile Include="IRepositories\IUnityOfWork.cs" />
+    <Compile Include="IRepositories\IVentaRepository.cs" />
+    <Compile Include="IRepositories\ITransporteRepository.cs" />
+    <Compile Include="IRepositories\IAdministrativoRepository.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Servicio.cs" />
+    <Compile Include="Entities\TipoComprobante.cs" />
+    <Compile Include="Entities\TipoLugar.cs" />
+    <Compile Include="Entities\TipoPago.cs" />
+    <Compile Include="Entities\TipoTripulacion.cs" />
+    <Compile Include="Entities\TipoViaje.cs" />
+    <Compile Include="Entities\Transporte.cs" />
+    <Compile Include="Entities\Tripulacion.cs" />
+    <Compile Include="Entities\Venta.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
